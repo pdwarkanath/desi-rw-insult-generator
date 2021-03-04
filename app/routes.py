@@ -11,6 +11,6 @@ def index():
 	rand_adj1 = adjective1[r.randint(0, high=adj1_len)]
 	rand_hero = hero[r.randint(0, high=hero_len)]
 
-	txt = f'You {rand_adj} {rand_anti} {rand_adj1} {rand_hero}'
+	txt = f'You {rand_adj}, {rand_anti} {rand_adj1} {rand_hero}'
 	return render_template('index.html', txt = txt)
 
