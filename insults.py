@@ -1,5 +1,3 @@
-import numpy.random as r
-
 adjective = ['a']*16
 adjective[0] = 'pathetic,'
 adjective[1] = 'pompous,' 
@@ -86,12 +84,3 @@ adj_len = len(adjective)
 anti_len = len(anti)
 adj1_len = len(adjective1)
 hero_len = len(hero)
-
-rand_adj = adjective[r.randint(0, high=adj_len)]
-rand_anti = anti[r.randint(0, high=anti_len)]
-rand_adj1 = adjective1[r.randint(0, high=adj1_len)]
-rand_hero = hero[r.randint(0, high=hero_len)]
-
-
-print(f'You {rand_adj} {rand_anti} {rand_adj1} {rand_hero}')
-
